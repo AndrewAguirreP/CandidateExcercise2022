@@ -16,7 +16,6 @@ namespace DayApp.Controllers
         //Challenge 1:
         //Call this api endpoint on your api testing tool
         //Call should display "Hello World!"
-
         [HttpGet]
         public ActionResult Get()
         {
@@ -35,7 +34,7 @@ namespace DayApp.Controllers
         //////Update fix GetPeopleAsync to filter the people list by [department] using [DepartmentType] enum Sort the people list by [FirsName] Descending
         //////Api should have a route "list" appended, sample route "facebook/user/[list]"
         //////Api should be asynchrounous
-        //////Api will receive a parameter DepartmentType
+        //////Api will receive a parameter DepartmentType to filter the results by department
         //////Api should check if result is empty, then return status code 204
         //////Api should return status code 200 when there is data on the list from GetPeopleAsync(DepartmentType department)
 
